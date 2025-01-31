@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="padding: 0;" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="../dist-bootstrap/css/bootstrap.min.css" rel="stylesheet" >
+    <title>Site web by Nexus</title>
+</head>
+<body>
+    <header>
+        <img class="fond" src="image/fond.jpg" alt="Image de presentation">
+        <nav style="padding-bottom: 0px;padding-top: 0px;" class="navbar bg-body-tertiary">
+            <div class="container-fluid bord">
+              <div>
+                <a class="navbar-brand" href="#">
+                  <img src="image/nda.jpg" alt="Logo" width="60" height="auto" class="d-inline-block align-text-center">
+                  Nexus D-Prime Acker
+                </a>
+              </div>
+                <ul class="main-nav">
+                  <li class="list">
+                    <a class="bar"  href="affiche.html">Accueil</a>
+                  </li>
+                  <li class="list">
+                    <a class="bar"  href="">Services</a>
+                  </li>
+                  <li class="list">
+                    <a class="bar" href="competence.html">Competences</a>
+                  </li>
+                  <li class="list">
+                    <a class="bar" href="index.html">Portfolio</a>
+                  </li>
+                  <li class="list">
+                    <a class="bar" href="propos.html">A propos</a>
+                  </li>
+                  <li class="list">
+                    <a class="bar active" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+            </div>
+          </nav> 
+    </header>
+      <div class="form">
+          <h1 class="heading" style="color: rgb(108, 37, 184);">Contactez-Moi</h1>
+          <div>
+            <form action="" method="get">
+                <label for="nom">Votre Nom :</label>
+                <input class="bend" type="text" name="nom" id="nom">
+                <label for="prenom">Votre Prenom :</label>
+                <input class="bend" type="text" name="prenom" id="prenom"><br>
+                <label for="email">Email :</label><br>
+                <input class="bend" type="email" name="email" id="email">
+                <label for="number">Votre Numero :</label>
+                <input class="bend" type="number" name="number" id="number"><br>
+                <label for="date">Date du jour</label><br>
+                <input class="bend" type="date" name="date" id="date" value="2000-01-01" min="1900-01-01"
+                    max="2025-12-01"><br>
+            </form>
+        </div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Motifs du contact</label><br>
+            </div>
+            <input class="button" type="submit" name="envoyer" value="Envoyer">
+      </div>
+    <footer class="copyright">
+        <div>
+          <p class="end">Made bye Nexus D-Prime Acker</p>
+        </div>
+        <div style="display: flex;gap: 3em;">
+          <a class="lien" href="">
+            <img src="image/twitter.png" alt="Image twitter">
+          </a>
+          <a class="lien" href="">
+            <img src="image/instagram.png" alt="Image instagram">
+          </a>
+        </div>
+      </footer>
+</body>
+</html>

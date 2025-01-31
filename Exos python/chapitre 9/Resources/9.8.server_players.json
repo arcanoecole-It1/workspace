@@ -1,0 +1,19 @@
+{
+  "servers": {
+    "europe_west": {
+      "players": [
+        { "name": "Henri", "class": "Paladin", "level": 100 },
+        { "name": "Alick", "class": "Thief", "level": 42 },
+        { "name": "Charlie", "class": "ChessMaster", "level": 80 },
+        { "name": "Patrick", "class": "Shopkeeper", "level": 65 }
+      ]
+    },
+    "north_america": {
+      "players": [
+        { "name": "Bob", "class": "Warrior", "level": 53 },
+        { "name": "Alice", "class": "Wizard", "level": 13 },
+        { "name": "Zack", "class": "Fighter", "level": 73 }
+      ]
+    }
+  }
+}

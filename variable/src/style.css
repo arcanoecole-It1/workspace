@@ -1,0 +1,11 @@
+img , .petit {
+    width: 20em;
+    height: auto;
+    border: 0.4em solid rgb(0, 0, 0);
+}
+
+.grand {
+    width: 40em;
+    height: auto;
+    border: 0.4em solid rgb(0, 0, 0);
+}
