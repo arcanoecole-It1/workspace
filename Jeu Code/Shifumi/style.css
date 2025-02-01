@@ -1,0 +1,171 @@
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+body {
+    background-color: white;
+}
+
+.game {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2em;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 3em;
+    border-radius: 4em;
+    width: fit-content;
+    margin: auto;
+    margin-top: 3em;
+}
+.ciseau , .pierre , .feuille,.bot-ciseau,.bot-pierre,.bot-feuille{
+    width: 10em;
+    height: 10em;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.semi {
+    background-color: white;
+    padding: 1em;
+    border-radius: 2em;
+    border: 2px solid black;
+}
+.ciseau:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 2em;
+    border: 2px solid rgb(64, 9, 230);
+    transition: background-color 0.3s ease;
+}
+
+.pierre:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 2em;
+    border: 2px solid rgb(64, 9, 230);
+    transition: background-color 0.3s ease;
+}
+
+.feuille:hover{
+    background-color: #ffffff;
+    border-radius: 2em;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(64, 9, 230);
+    transition: background-color 0.3s ease;
+}
+
+.score-container , .bot-container {
+    display: inline-block;
+    padding: 1em;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.818);
+    color: #ffffff;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 4px 4px 4px rgb(74, 54, 54);
+    margin-top: 2em !important;
+    font-family: "Sour Gummy", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-variation-settings:"wdth" 100;
+}
+.score-container {
+    width: 7em;
+    text-align: center !important;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgba(0, 0, 0, 0.431);
+    width: fit-content;
+    padding: 2em;
+    margin: auto;
+    border-radius: 1.4em;
+}
+.red {
+    background-color: rgb(34, 228, 27);
+    box-shadow: 6px 6px 6px rgb(74, 54, 54);
+}
+
+.blue {
+    background-color: rgb(230, 230, 18);
+    box-shadow: 6px 6px 6px rgb(74, 54, 54);
+}
+
+.active {
+    background-color: white;
+    border-radius: 2em;
+    border: 2px solid rgb(255, 0, 0);
+}
+.active-bot {
+    background-color: white;
+    border-radius: 2em;
+    border: 2px solid rgb(0, 179, 255);
+} 
+footer {
+    background-color: blueviolet;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    margin-top: 4em !important;
+    border-radius: 2em;
+    width: 49em;
+    margin: auto;
+}
+
+.score-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    justify-content: center;
+}
+
+.comment {
+    font-size: 1.4em;
+    color: rgb(105, 105, 105);
+    margin-top: 1em;
+    background-color:white;
+    padding: 0.5em;
+    border-radius: 1em;
+    width: 30em;
+    margin: auto;
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+}
+
+.winner { 
+    color: green !important;
+}
+
+.loser {
+    color: red !important;
+}
+
+.equal {
+    color: rgb(0, 64, 255) !important;
+}
+
+.reset {
+    margin-top: 2em;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.reset:active {
+    background-color: rgb(255, 0, 0, 0.7);
+    transition: background-color 0.4s ease;
+}
