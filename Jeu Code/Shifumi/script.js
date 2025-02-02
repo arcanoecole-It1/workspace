@@ -11,7 +11,7 @@ function afficherInput() {
     }
   }
 function gameEnd(playerScore, computerScore) {
-    if (playerScore == 5 || computerScore == 5) {
+    if (playerScore == 12 || computerScore == 12) {
         if (playerScore > computerScore) {
             alert("Vous avez gagné!")
         } else {
