@@ -187,10 +187,6 @@ p span {
     h1 {
         font-size: 2em;
     }
-    footer {
-        width: 100%;
-        margin-top: 2em;
-    }
 }
 
 @media screen and (max-width: 400px) {
@@ -202,10 +198,6 @@ p span {
     }
     .reset {
         margin-top: 1em;
-    }
-    footer {
-        width: 100%;
-        margin-top: 2em;
     }
 }
 
@@ -219,10 +211,6 @@ p span {
     .reset {
         margin-top: 1em;
     }
-    footer {
-        width: 100%;
-        margin-top: 2em;
-    }
 }
 
 @media screen and (max-width: 200px) {
@@ -235,9 +223,5 @@ p span {
     }
     .reset {
         margin-top: 1em;
-    }
-    footer {
-        width: 100%;
-        margin-top: 2em;
     }
 }
