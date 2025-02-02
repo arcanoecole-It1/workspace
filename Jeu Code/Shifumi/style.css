@@ -168,3 +168,60 @@ footer {
     background-color: rgb(255, 0, 0, 0.7);
     transition: background-color 0.4s ease;
 }
+p span {
+    color: rgb(233, 7, 7);
+    font-size: 1em;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .game {
+        gap: 1em;
+    }
+    .score-container, .bot-container {
+        width: 100%;
+    }
+    .reset {
+        margin-top: 1em;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .game {
+        gap: 1em;
+    }
+    .score-container, .bot-container {
+        width: 100%;
+    }
+    .reset {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .game {
+        gap: 1em;
+    }
+    .score-container, .bot-container {
+        width: 100%;
+    }
+    .reset {
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    .game {
+        flex-direction: column;
+        gap: 1em;
+    }
+    .score-container, .bot-container {
+        width: 100%;
+    }
+    .reset {
+        margin-top: 1em;
+    }
+}
