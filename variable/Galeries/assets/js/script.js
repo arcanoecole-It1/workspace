@@ -1,25 +1,3 @@
-let btnNature = document.getElementById("natures");
-btnNature.addEventListener("click", function() {
-    nature();
-});
-let btnAnime = document.getElementById("autres");
-btnAnime.addEventListener("click", function() {
-    autre();
-});
-let btnFilm = document.getElementById("films");
-btnFilm.addEventListener("click", function() {
-    film();
-});
-let btnAnimaux = document.getElementById("animaux-btn");
-btnAnimaux.addEventListener("click", function() {
-    animaux();
-});
-let btnGen = document.getElementById("gens");
-btnGen.addEventListener("click", function() {
-    gen();
-});
-
-
 const pictures = [
     {
         src: "assets/images/nature1.jpg",
@@ -70,8 +48,7 @@ const pictures = [
         src: "assets/images/animaux2.jpg",
         alt: "Image d'animaux",
         category: "animaux"
-    }
-    ,
+    },
     {
         src: "assets/images/animaux3.jpg",
         alt: "Image d'animaux",
@@ -122,14 +99,37 @@ const pictures = [
         alt: "Image gens",
         category: "gens"
     }
-]
-const container = document.getElementById('semi-container');
-let images= document.querySelectorAll(".test");
+];
 
+const imagesContainer = document.querySelector(".gallery"); // Assuming your images are displayed in a container with the class "gallery"
 
+function displayImages(imageArray) {
+    imagesContainer.innerHTML = ""; // Clear the container before adding new images
 
-images.forEach((img,index) =>{
-    img.src=pictures[index].src;
-    
-})
+    imageArray.forEach(imageData => {
+        const imgElement = document.createElement("img");
+        imgElement.src = imageData.src;
+        imgElement.alt = imageData.alt;
+        imgElement.classList.add("test"); // Add the "test" class if needed
+        imagesContainer.appendChild(imgElement);
+    });
+}
 
+// Initial display of all images
+displayImages(pictures);
+
+// Get all filter buttons
+const filterButtons = document.querySelectorAll(".filter-button"); // Assuming your filter buttons have the class "filter-button"
+
+filterButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        const category = button.id; // Assuming the button's ID corresponds to the category
+
+        if (category === "all") {
+            displayImages(pictures); // Display all images if "all" is clicked
+        } else {
+            const filteredImages = pictures.filter(image => image.category === category);
+            displayImages(filteredImages);
+        }
+    });
+});

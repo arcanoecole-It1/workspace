@@ -38,11 +38,13 @@ img {
     gap: 2em;
     margin-bottom: 3em;
 }
-.semi-container {
+.gallery {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2em;
+    flex-wrap: wrap;
+    width: 100%;
 }
 button {
     width: 10em;
@@ -62,8 +64,4 @@ button:hover {
 .click {
     background-color: white;
     color: #6883bc;
-}
-
-.hidden {
-    display: none;
 }
