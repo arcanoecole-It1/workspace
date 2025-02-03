@@ -29,3 +29,27 @@ function checkDraw() {
 const cases = document.querySelectorAll('.CLick-player');
 function show() {
 }
+
+function end(scorePlayer,scoreBot) {
+  if (scorePlayer == 2 || scoreBot == 2) {
+    if (scoreBot > scorePlayer) {
+      alert ('End of game Player O Wins the game!');
+      restart.textContent = "Recommencer";
+      scorePlayer = 0;
+      scoreBot = 0;
+      restart.addEventListener('click', () => {
+        document.getElementById("PlayerX").textContent = scorePlayer;
+        document.getElementById("PlayerO").textContent = scoreBot;
+      })
+    } else {
+      alert ('End of game Player X Wins the game!');
+      restart.textContent = "Recommencer";
+      scorePlayer = 0;
+      scoreBot = 0;
+      restart.addEventListener('click', () => {
+        document.getElementById("PlayerX").textContent = scorePlayer;
+        document.getElementById("PlayerO").textContent = scoreBot;
+      })
+    }
+  }
+}
