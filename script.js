@@ -1,5 +1,7 @@
 let currentPlayer = 'X';
 let botPlayer = 'O';
+let scorePlayer = 0;
+let scoreBot = 0;
 var gameBoard = ['', '', '', '', '', '', '', '', '']; // Tableau pour suivre l'état du jeu.
 let restart = document.getElementById('btn-restart');
 restart.addEventListener('click', () => {
@@ -35,22 +37,34 @@ boxes.forEach((box, index) => {
             currentPlayer = 'O';
             if (checkWin()) {
                 alert("Joueur X Vainqueur!");
+                scorePlayer += 1;
+                document.getElementById("PlayerX").textContent = scorePlayer;
                 document.getElementById('comment').textContent = "Tour"
                 return; 
             }
             if (checkDraw()) {
                 document.getElementById('comment').textContent = "Tour"
+                scorePlayer -= 1;
+                scoreBot -= 1;
+                document.getElementById("PlayerX").textContent = scorePlayer;
+                document.getElementById("Player0").textContent = scoreBot;
                 alert("Manche Null!");
                 return;
             }
             botMove();
             if (checkWin()) {
                 document.getElementById('comment').textContent = "Tour"
+                scoreBot += 1;
+                document.getElementById("PlayerO").textContent = scoreBot;
                 alert("Joueur O Vainqueur!");
                 return; 
             }
             if (checkDraw()) {
                 document.getElementById('comment').textContent = "Tour"
+                scorePlayer -= 1;
+                scoreBot -= 1;
+                document.getElementById("PlayerX").textContent = scorePlayer;
+                document.getElementById("Player0").textContent = scoreBot;
                 alert("Manche Null!");
                 return;
             }
