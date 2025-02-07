@@ -139,4 +139,4 @@ Avec HTML, CSS et JavaScript seuls, tu peux coder une multitude de jeux et de si
 5.  **N'hésite pas à demander de l'aide:**  Il existe de nombreuses communautés en ligne où tu peux trouver de l'aide si tu es bloqué.
 6.  **Amuse-toi !**  Le codage doit être un plaisir.
 
-En résumé, les possibilités sont vastes avec seulement HTML, CSS et JavaScript. Choisis un projet qui t'intéresse, apprends progressivement et n'hésite pas à expérimenter ! Bon codage !# workspace
+En résumé, les possibilités sont vastes avec seulement HTML, CSS et JavaScript. Choisis un projet qui t'intéresse, apprends progressivement et n'hésite pas à expérimenter ! Bon codage !

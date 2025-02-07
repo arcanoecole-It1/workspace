@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background-color: #1f2039;
+}
+.great_container {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(12, 12, 144);
+    width: fit-content;
+    margin: auto;
+    padding: 19px;
+}
+.semi_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: rgba(5, 54, 82, 0.692);
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ecran {
+    width: 35em;
+    height: 10em;
+    border-radius: 15% 15% 0% 0%;
+    background-color: lightblue;
+    margin-top: 10em;
+    border: 2px solid black;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 10px;
+}
+
+.del {
+    height: 0.9em;
+}
+
+.button {
+    width: 3em;
+    height: 3em;
+    border-radius: 15px;
+    font-size: 2em;
+    background-color: rgb(215, 215, 215);
+}
+
+.button:hover {
+    background: linear-gradient(#504f56, #6ad8d2);
+    color: red;
+}
+
+.special {
+    width: 5em;
+    height: 2.4em;
+    border-radius: 15px;
+    background-color: rgba(203, 16, 16, 0.875);
+    font-size: 2em;
+}
+
+.special:active {
+    background-color: blue;
+    color: red;
+}
