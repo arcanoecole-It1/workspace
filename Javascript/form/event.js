@@ -1,4 +1,4 @@
-let btn = document.querySelector(".btn")
+let btn = document.querySelector(".btn");
 btn.addEventListener("click",function() {
     event.preventDefault()
     password.classList.remove("valid","invalid")
